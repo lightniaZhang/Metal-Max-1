@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>重装机兵1</title>
+	<link rel="stylesheet" href="./css/MM1.css">
+</head>
+<body>
+	<div id="box" class="box">
+		<!-- 主角、道具说明(charater and property) start -->
+
+		<div class="rebana">
+			<!-- 主角状态(charater) start -->
+			<ul>
+				<li>
+					<img src="./img/characters/rebana.jpg" alt="图片加载错误" class="rebanaimg">
+					<div class="charatersname">
+						<span>rebana</span>
+						<br />
+						<span>LV: <span id="rebanalv"></span></span>
+					</div>
+				</li>
+				<li>
+					HP:	<span id="rebanahp"></span>
+			    </li>
+				<li>
+					AT: <span id="rebanaat"></span>
+				</li>
+				<li>
+					DE: <span id="rebanade"></span>
+				</li>
+				<li>
+					EXP: <span id="rebanaexp"></span>/<span id="levelUpExp"></span>
+				</li>
+				<li>
+					keys: <span id="keys"></span>
+				</li>
+			</ul>
+			<!-- 主角状态(charater) end -->
+
+			<!-- 血瓶道具说明(HP) start -->
+			<ul>
+				<img src="./img/things/blood.jpg" alt="图片加载错误">
+				<span class="text-vertical">HP +100</span>
+			</ul>
+			<!-- 血瓶道具说明(HP) end -->
+			
+			<!-- 攻击道具说明(AT) start -->
+			<ul>
+				<img src="./img/things/attack.jpg" alt="图片加载错误">
+				<span>AT +50</span>
+			</ul>
+			<!-- 攻击道具说明(AT) end -->
+
+			<!-- 防御道具说明(DE) start -->
+			<ul>
+				<img src="./img/things/shield.jpg" alt="图片加载错误">
+				<span>DE +30</span>
+			</ul>
+			<!-- 防御道具说明(DE) end -->
+
+			<!-- 钥匙道具说明(key) start -->
+			<ul>
+				<img src="./img/things/key.jpg" alt="图片加载错误">
+				<span>key</span>
+			</ul>
+			<!-- 钥匙道具说明(key) end -->
+			
+			<!-- 移动说明(move) start -->
+			<ul>
+				<li>
+					<span>Move:</span>
+				</li>
+				<li>
+					<i></i>
+					<span>Up</span>
+				</li>
+				<li>
+					<i></i>
+					<span>Right</span>
+				</li>
+				<li>
+					<i></i>
+					<span>Down</span>
+				</li>
+				<li>
+					<i></i>
+					<span>Left</span>
+				</li>
+			</ul>
+			<!-- 移动说明(move) end -->
+		</div>
+		<!-- 主角、道具说明(charater and property) end -->
+
+		<!-- 地图(map) start -->
+		<div class="map" id="map" style="height: 600px;width: 750px"></div>
+		<!-- 地图(map) end -->
+
+		<!-- 怪物说明(monsters) start-->
+		<div class="monsters">
+			<!-- monster1 start-->
+			<ul>
+				<li>
+					<img src="./img/characters/monster1.jpg" alt="图片加载错误" class="rebanaimg">
+					<div class="charatersname">
+						<span>monster1</span>
+						<br />
+						<span>LV:1</span>
+					</div>
+				</li>
+				<li>
+					<span>HP:50&emsp;&ensp;</span>
+					<span>AT:20</span>
+				</li>
+				<li>
+					<span>DE:10&emsp;&ensp;</span>
+					<span>EXP:40</span>
+				</li>
+			</ul>
+			<!-- monster1 end -->
+
+			<!-- monster2 start -->
+			<ul>
+				<li>
+					<img src="./img/characters/monster2.jpg" alt="图片加载错误(error)" class="rebanaimg">
+					<div class="charatersname">
+						<span>monster2</span>
+						<br />
+						<span>LV:3</span>
+					</div>
+				</li>
+				<li>
+					<span>HP:150&emsp;</span>
+					<span>AT:50</span>
+				</li>
+				<li>
+					<span>DE:40&emsp;&ensp;</span>
+					<span>EXP:100</span>
+				</li>
+			</ul>
+			<!-- monster2 end -->
+
+			<!-- monster3 start -->
+			<ul>
+				<li>
+					<img src="./img/characters/monster3.jpg" alt="图片加载错误" class="rebanaimg">
+					<div class="charatersname">
+						<span>monster3</span>
+						<br />
+						<span>LV:7</span>
+					</div>
+				</li>
+				<li>
+					<span>HP:300&emsp;</span>
+					<span>AT:100</span>
+				</li>
+				<li>
+					<span>DE:90&emsp;&ensp;</span>
+					<span>EXP:400</span>
+				</li>
+			</ul>
+			<!-- monster3 end -->
+
+			<!-- boss1 start -->
+			<ul>
+				<li>
+					<img src="./img/characters/boss1.jpg" alt="图片加载错误" class="rebanaimg">
+					<div class="charatersname">
+						<span>boss1</span>
+						<br />
+						<span>LV:10</span>
+					</div>
+				</li>
+				<li>
+					<span>HP:500&emsp;</span>
+					<span>AT:150</span>
+				</li>
+				<li>
+					<span>DE:100&emsp;</span>
+					<span>EXP:800</span>
+				</li>
+			</ul>
+			<!-- boss1 end -->
+
+			<!-- boss2 start -->
+			<ul>
+				<li>
+					<img src="./img/characters/boss2.jpg" alt="图片加载错误" class="rebanaimg">
+					<div class="charatersname">
+						<span>boss2</span>
+						<br />
+						<span>LV:14</span>
+					</div>
+				</li>
+				<li>
+					<span>HP:1000&emsp;</span>
+					<span>AT:200</span>
+				</li>
+				<li>
+					<span>DE:150&ensp;</span>
+					<span>EXP:2000</span>
+				</li>
+			</ul>
+			<!-- boss2 end -->
+
+			<!-- finalboss start -->
+			<ul>
+				<li>
+					<img src="./img/characters/boss3.jpg" alt="图片加载错误" class="rebanaimg">
+					<div class="charatersname">
+						<span>finalboss</span>
+						<br />
+						<span>LV:20</span>
+					</div>
+				</li>
+				<li>
+					<span>HP:5000&emsp;</span>
+					<span>AT:500</span>
+				</li>
+				<li>
+					<span>DE:400</span>
+					<span>EXP:10000</span>
+				</li>
+			</ul>
+			<!-- finalboss end -->
+		</div>
+		<!-- 怪物说明(monsters) end-->
+	</div>
+	
+
+	<script type="text/javascript" src="./js/MM1.js"></script>
+</body>
+</html>

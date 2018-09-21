@@ -1,0 +1,87 @@
+body,
+div,
+ul,
+li,
+i {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: "microsft Yahei"; 
+}
+
+body {
+	background-color: #000;
+}
+
+ul {
+	border: 1px solid white;
+	margin-bottom: 5px;
+}
+
+li {
+	list-style: none;
+}
+
+i {
+	color: white;
+	font-family: icomoon;
+	font-style: normal;
+}
+
+/*图标字体*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?44q440');
+  src:  url('../fonts/icomoon.eot?44q440#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?44q440') format('truetype'),
+    url('../fonts/icomoon.woff?44q440') format('woff'),
+    url('../fonts/icomoon.svg?44q440#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*界面框(main)*/
+.box {
+	height: 600px;
+	width: 1150px;
+	margin: 30px auto;
+}
+
+/*地图框(map)*/
+.map {
+	background-image: url("../img/terrain/saddy_road.jpg");
+	float: left;
+}
+
+/*说明框(explanation)*/
+.rebana,
+.monsters {
+	height: 546px;
+	width: 146px;
+	border: 2px dashed white;
+	padding: 25px;
+	float: left;
+}
+
+.rebana {
+	border-right: 2px solid white;
+}
+
+.monsters {
+	border-left: 2px solid white;
+}
+
+.rebanaimg {
+	height: 40px;
+	width: 40px;
+}
+
+/*名字、等级(charatersname、level)*/
+.charatersname {
+	display: inline-block;
+}
+
+.text-vertical {
+	height: 100%;
+	vertical-align: center;
+}
